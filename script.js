@@ -18,24 +18,18 @@ function createParagraph(){
     document.getElementById("text").append(newParagraph);
     return newParagraph;
 };
-
-
-
-
-
-
-
-
-    
-
-
-
-
+   
+myButton.addEventListener("click",()=>{
+    console.log(createParagraph());
+})
+myButton.addEventListener("click",()=>{
+    console.log(myPhoneInput.value);
+})
 
 const makeOver=document.querySelector(".siteheader");
 makeOver.style.backgroundColor= "green";
 
-const cars = ["Saab", "Volvo", "BMW"];
+const cars = ["Saab", "Volvo", "BMW", "Nissan","volvo","Renault"];
 const listContainer = document.getElementById("car-list");
 cars.forEach((car) => {
 const listItem = document.createElement("li");
@@ -43,23 +37,6 @@ listItem.textContent = car;
 listContainer.appendChild(listItem);
 });
 
-/* const myInput = document.getElementById("minInput");
-const onlyNumber = document.getElementById("error");
-myInput.addEventListener("input", function () {
-if (isNaN(myInput.value)) {
-onlyNumber.textContent = "You must enter a number!";
-} else {
-onlyNumber.textContent = "";
-}
-});
- */
-/* function handlePhone(){
-    const phoneValue=document.getElementById("phoneInput").value;
-    console.log(phoneValue);
-}
-createParagraph(phoneValue);
 
 
-
- */
 
