@@ -8,8 +8,9 @@ const myPhoneInput=document.getElementById("phoneInput");
 
 myButton.addEventListener("click",(e)=> {
     e.preventDefault();
-   const myInput=document.getElementById("emailInput").value;
-    console.log(myInput);
+    console.log(myInput.value);
+    console.log(createParagraph());
+    console.log(myPhoneInput.value);
 });
 
 function createParagraph(){
@@ -19,12 +20,7 @@ function createParagraph(){
     return newParagraph;
 };
    
-myButton.addEventListener("click",()=>{
-    console.log(createParagraph());
-})
-myButton.addEventListener("click",()=>{
-    console.log(myPhoneInput.value);
-})
+
 
 const makeOver=document.querySelector(".siteheader");
 makeOver.style.backgroundColor= "green";
